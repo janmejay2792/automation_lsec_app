@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Desjtop(failed)">
+    <parameter name="platform" value="web"/>
+    <classes>
+      <class name="com.automation.testscripts.Test_LoginTest">
+        <methods>
+          <include name="Test_LoginTest_"/>
+          <include name="takeScreenShotOnFailure"/>
+          <include name="stopAppiumServer"/>
+          <include name="setup"/>
+          <include name="startAppoumserver"/>
+        </methods>
+      </class> <!-- com.automation.testscripts.Test_LoginTest -->
+    </classes>
+  </test> <!-- Desjtop(failed) -->
+  <test thread-count="5" name="Android(failed)">
+    <parameter name="platform" value="mobile"/>
+    <classes>
+      <class name="com.automation.testscripts.Test_LoginTest">
+        <methods>
+          <include name="Test_LoginTest_"/>
+          <include name="takeScreenShotOnFailure"/>
+          <include name="stopAppiumServer"/>
+          <include name="setup"/>
+          <include name="startAppoumserver"/>
+        </methods>
+      </class> <!-- com.automation.testscripts.Test_LoginTest -->
+      <class name="com.automation.testscripts.Test_RegisteringLSAT">
+        <methods>
+          <include name="takeScreenShotOnFailure"/>
+          <include name="stopAppiumServer"/>
+          <include name="Test_RegisteringLSAT_"/>
+          <include name="setup"/>
+          <include name="startAppoumserver"/>
+        </methods>
+      </class> <!-- com.automation.testscripts.Test_RegisteringLSAT -->
+      <class name="com.automation.testscripts.Test_SignUpPage">
+        <methods>
+          <include name="Test_SignUpPage_"/>
+          <include name="takeScreenShotOnFailure"/>
+          <include name="stopAppiumServer"/>
+          <include name="setup"/>
+          <include name="startAppoumserver"/>
+        </methods>
+      </class> <!-- com.automation.testscripts.Test_SignUpPage -->
+    </classes>
+  </test> <!-- Android(failed) -->
+</suite> <!-- Failed suite [Suite] -->

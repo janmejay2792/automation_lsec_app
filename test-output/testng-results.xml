@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="30576" started-at="2020-05-11T04:54:15 IST" finished-at="2020-05-11T04:54:45 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="30576" started-at="2020-05-11T04:54:15 IST" finished-at="2020-05-11T04:54:45 IST">
+      <class name="com.automation.testscripts.Test_LoginTest">
+        <test-method status="PASS" signature="startAppoumserver(java.lang.String)[pri:0, instance:com.automation.testscripts.Test_LoginTest@8b96fde]" name="startAppoumserver" is-config="true" duration-ms="15" started-at="2020-05-11T04:54:15 IST" finished-at="2020-05-11T04:54:15 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[web]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startAppoumserver -->
+        <test-method status="PASS" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.automation.testscripts.Test_LoginTest@8b96fde]" name="setup" is-config="true" duration-ms="9046" started-at="2020-05-11T04:54:15 IST" finished-at="2020-05-11T04:54:24 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[web]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="Test_LoginTest_()[pri:0, instance:com.automation.testscripts.Test_LoginTest@8b96fde]" name="Test_LoginTest_" duration-ms="20842" started-at="2020-05-11T04:54:24 IST" finished-at="2020-05-11T04:54:45 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test_LoginTest_ -->
+        <test-method status="PASS" signature="takeScreenShotOnFailure(org.testng.ITestResult)[pri:0, instance:com.automation.testscripts.Test_LoginTest@8b96fde]" name="takeScreenShotOnFailure" is-config="true" duration-ms="0" started-at="2020-05-11T04:54:45 IST" finished-at="2020-05-11T04:54:45 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Test_LoginTest_ status=SUCCESS method=Test_LoginTest.Test_LoginTest_()[pri:0, instance:com.automation.testscripts.Test_LoginTest@8b96fde] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenShotOnFailure -->
+        <test-method status="PASS" signature="stopAppiumServer(java.lang.String)[pri:0, instance:com.automation.testscripts.Test_LoginTest@8b96fde]" name="stopAppiumServer" is-config="true" duration-ms="644" started-at="2020-05-11T04:54:45 IST" finished-at="2020-05-11T04:54:45 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[web]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopAppiumServer -->
+      </class> <!-- com.automation.testscripts.Test_LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
