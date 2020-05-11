@@ -105,22 +105,23 @@ public class BaseClass {
 
 			break;
 		case "IOS":
-			System.out.println("Mobile Application is opening... ");
+			System.out.println("IOS Application is opening... ");
 			cap = new DesiredCapabilities();
 			cap.setCapability(MobileCapabilityType.DEVICE_NAME, "ABCD");
 			cap.setCapability(MobileCapabilityType.PLATFORM_NAME, "IOS");
-			cap.setCapability(MobileCapabilityType.BROWSER_NAME, "Chrome");
-			cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "xcuit");
+			cap.setCapability("platformVersion", "11.2.6");
+			cap.setCapability(MobileCapabilityType.BROWSER_NAME, "safari");
+			cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "XCUITest");
 			cap.setCapability(MobileCapabilityType.NO_RESET, false);
 			if (runOn.equals("A")) {
-				cap.setCapability("udid", "A");
+				cap.setCapability("udid", "IOS_A");
 				driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4729/wd/hub"), cap);
 			} else if (platformRunAs.equals("IOS")) {
 				driverIOS = new IOSDriver<MobileElement>(service.getUrl(), cap);
 				driverIOS.get(Urls.URL);
 				Utils.click(new LoginPageObject().cookiesClick);
 				driverIOS.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-				driverIOS.manage().deleteAllCookies();
+//				driverIOS.manage().deleteAllCookies();
 			}
 
 			break;
